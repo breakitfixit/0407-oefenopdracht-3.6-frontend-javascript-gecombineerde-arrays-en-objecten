@@ -40,6 +40,7 @@ const movies = [
 // ------------------------------------------------------------------------------ //
 // Opdracht 1a: Log het eerste object in de 'movies' array
 
+
 // Verwacht antwoord:
 // {
 //     title: "The Shawshank Redemption",
@@ -48,30 +49,45 @@ const movies = [
 //     actors: [ "Tim Robbins", "Morgan Freeman", "Bob Gunton" ]
 // }
 
-
+// Mijn antoowrd voor 1a:
+console.log(movies[0]);
 
 // Opdracht 1b: Log de titel van het eerste object in de 'movies' array
 
 // Verwacht antwoord:
 // The Shawshank Redemption
 
+// Mijn antoowrd voor 1b:
+console.log(movies[0].title);
 
 // ------------------------------------------------------------------------------ //
-// Opdracht 2a: Log de hoeveel films er in de 'movies' array staan (de lengte van de array). Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken. Je mag dus niet zelf tellen!
+// Opdracht 2a: Log de hoeveel films er in de 'movies' array staan (de lengte van de array).
+// Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken. Je mag dus niet zelf tellen!
 
 // Verwacht antwoord:
 // 6
 
+// // Mijn antoowrd voor 2a:
+console.log(movies.length)
 
 
-// Opdracht 2b: Log het indexnummer van de laatste film in de 'movies' array. Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken!
+// Opdracht 2b: Log het indexnummer van de laatste film in de 'movies' array.
+// Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken!
 
 // Verwacht antwoord:
 // 5
 
+// // Mijn antoowrd voor 2b:
+console.log(movies.length -1)
 
 
-// Opdracht 2c: Log het laatste object in de 'movies' array. Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken!
+
+
+
+
+// Opdracht 2c: Log het laatste object in de 'movies' array.
+
+// Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken!
 // Tip: maak gebruik van de code die je in de vorige opdracht hebt gemaakt.
 
 // Verwacht antwoord:
@@ -82,6 +98,9 @@ const movies = [
 //     actors: [ 'Henry Fonda', 'Lee J. Cobb', 'Martin Balsam' ]
 // }
 
+// Mijn antoowrd voor 2c:
+console.log(movies[movies.length - 1])
+// /*in dit geval benoem je eerst de movies array, en daarin het laatste object*/
 
 
 // ------------------------------------------------------------------------------ //
@@ -90,20 +109,30 @@ const movies = [
 // Verwachte antwoord:
 // ["John Travolta", "Samuel L. Jackson", "Uma Thurman"]
 
+// Mijn antoowrd voor 3a:
+console.log(movies[3].actors)
 
-
-// Opdracht 3b: Log de tweede acteur van de film "The Shawshank Redemption". Tip: je spreekt dus eerst de array, daarna het object en vervolgens weer een array aan.
+// Opdracht 3b: Log de tweede acteur van de film "The Shawshank Redemption".
+// Tip: je spreekt dus eerst de array, daarna het object en vervolgens weer een array aan.
 
 // Verwacht antwoord:
 // Morgan Freeman
 
+// Mijn antoowrd voor 3b:
+// console.log(movies[0].actors[1])
 
 
-// Opdracht 3c: Log de laatste acteur van de laatste film in 'movies' array. Let op: wanneer de array langer of korter wordt, of wanneer er meer of minder acteurs in dit rijtje staan, moet dit nog steeds werken!
+// Opdracht 3c: Log de laatste acteur van de laatste film in 'movies' array.
+// Let op: wanneer de array langer of korter wordt, of wanneer er meer of minder acteurs in dit rijtje staan,
+// moet dit nog steeds werken!
+
 // Tip: gebruik hiervoor o.a. jouw code uit 2b voor.
 
 // Verwacht antwoord:
 // Martin Balsam
+
+// Mijn antoowrd voor 3c:
+console.log(  movies[movies.length -1].actors[movies[movies.length -1].actors.length -1]);
 
 
 
@@ -114,6 +143,7 @@ const movies = [
 // om te kijken of je algoritme ook werkt wanneer je een andere film selecteert!
 
 const selectedMovie = movies[0];
+
 
 // Verwacht antwoord bij 'const selectedMovie = movies[0]':
 // Uitstekende film!!
